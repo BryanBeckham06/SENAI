@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> <b>MANUTENÇAO DE USUARIOS DO SISTEMA INTERNO</b></p>
+    <form>
+        <label>Login:</label> 
+        <input type="email"> <br>
+        <label>Senha:</label> 
+        <input type="password"> <br>
+
+          <label for="unidadeVolume">Status:</label>
+             <select class="selectpicker" data-size="5" data-live-search="true" data-width="100%" name="unidadeVolume" required>
+                 <option selected disabled>Escolha uma opção</option>
+                 <option>Ativo</option>
+                 <option>Inativo</option>
+                    </select> <br>
+             
+         <label>Tipo</label> 
+            <input type="radio" name="tipo" value="t"><b>Tecnico</b>
+             <input type="radio" name="tipo" value="p"><b>Professor</b>
+             <input type="radio" name="tipo" value="a"><b>Aluno</b> <br>
+
+             <label>Data de Criação</label> 
+             <input type="date"> <br>
+            
+             <label>Perfio</label>   
+             <input type="radio" name="tipo" value="t"><b>Convidado</b>
+             <input type="radio" name="tipo" value="p"><b>Administrador</b> <br>
+
+             <form>
+                <label for="name">Observações:</label> 
+                <center></center><textarea rows="10" cols="50" id="content"  name="content" ></textarea></center
+            </form> <br>
+
+            <label for="name">Modulos:</label> 
+            <input type="checkbox" name="modulos" value="tabaco"><b>Compras</b>
+            <input type="checkbox" name="modulos" value="alcool"><b>Biblioteca</b>
+            <input type="checkbox" name="modulos" value="café"><b>Academico</b> <br>
+            <input type="checkbox" name="modulos" value="tabaco"><b>Documentario</b>
+            <input type="checkbox" name="modulos" value="alcool"><b>Recursos Humanos</b><br>
+            
+            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Excluir">
+
+    </form>
+</body>
+</html>
