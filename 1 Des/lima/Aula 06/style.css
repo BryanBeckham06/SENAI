@@ -1,0 +1,47 @@
+/* *{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+
+    height: 100vh;
+
+.container{
+    border: 10px solid black
+.red{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+.green{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+
+.blue{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+
+header{
+
+    background-color: blue;
+        height: 33.33%;
+}  
+
+main{
+
+    background-color: red;
+    height: 33.33%;
+}
+
+footer{
+
+    background-color: blueviolet;
+    height: 33.33%;
+} */
