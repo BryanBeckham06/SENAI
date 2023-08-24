@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  height: 100vh;
+}
+
+
+.red{
+  padding: 100px;
+  background-color: red;
+}
+
+.green{
+  padding: 100px;
+  background-color: rgb(0, 255, 51);
+}
+
+.blue{
+  padding: 102px;
+  background-color: blue;
+}
+
+.header{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.main{
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}
+
+.footer{
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}

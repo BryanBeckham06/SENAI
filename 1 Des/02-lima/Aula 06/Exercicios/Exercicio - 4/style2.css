@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.red{
+    background-color: red;
+    width: 33.33vw;
+}
+
+.green{
+    background-color: green;
+    width: 33.33vw;
+}
+
+.blue{
+    background-color: blue;
+    width: 33.33vw;
+}
+
+/* header{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+main{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+footer{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+} */
