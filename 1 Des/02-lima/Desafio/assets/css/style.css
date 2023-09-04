@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --cor-principal:black;
+    --font-color:white;
+
+}
+
+body {
+    
+}
+nav {
+    
+    background-color: var(--cor-principal);
+    display: flex;
+}
+.Logo img {
+    width: 70px;
+}
+
+.Buscar {
+    display: flex;
+    align-items: center;
+
+}
+.Buscar  input {
+    padding: 10px;
+    width: 350px;
+    
+}
+
+.Buscar img {
+    transform: translateX(-30px);
+    width: 20px;
+}
+p {
+    color: white;
+    font-size: 24px;
+    margin-inline: 6px;
+    
+}
+.Login {
+    display: flex;
+    color: var(--font-color);
+    align-items: center;
+    margin-left: 40vw;
+}
+.Login img {
+    filter: invert(100%);
+    height: 30px;
+    width: 30px;
+    margin-left: 4vw;
+    
+
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 40px 5rem 0px 5rem;
+    gap: 1.70rem 1.70rem;
+    color: black;
+} 
+.item-card {
+    text-align: center;
+    border: 5px solid black;
+}
+.item-card p { 
+    color: black;
+
+}
+.item-card img {
+   background-color: white;
+    width: 300px;
+
+}
