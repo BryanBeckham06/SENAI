@@ -152,7 +152,7 @@ main .filter p {
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
     margin: 0px 5rem 0px 5rem;
     gap: 1.70rem 1.70rem;
