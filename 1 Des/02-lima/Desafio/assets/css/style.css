@@ -18,17 +18,234 @@
 body {
     background-color: white;
 }
-a {
+.novo {
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    background-image: url(../img/icones/new.png);
+    background-size: 6vh;
+    background-repeat: no-repeat;
+
+}
+.car {
+    
+    width: 80px;
+    height: 80px;
+    margin-left: 180px;
+    margin-top: 40px;
+    position: absolute;
+    background-image: url(../img/icones/car.png);
+    background-size: 4vh;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+.Login a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color:white;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Logo{
+    display: flex;
+    background-color: black;
+   align-items: center;
+    height: 100px;
+
+}
+.Logo img {
+    display: flex;
+    width: 80px;
+    align-items: center;
+    margin-left: 10vw;
+}
+.Buscar {
+    display: flex;
+    align-items: center;
+    
+}
+.Buscar input {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 32vw;
+    border-radius: 30px;
+    margin-left: 10vw;
+    border: 4px solid white;
+}
+.Buscar img {
+    transform: translateX(-30px);
+    width: 20px;
+
+}
+.Login {
+    display: flex;
+    align-items: center;
+}
+.Login img {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 20vw;
+}
+.carrinho {
+    display: flex;
+    align-items: center;
+}
+.carrinho img {
+    display: flex;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 5vw;
+
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 4vw;
+}
+
+.inter img {
+    display: flex;
+    width: 80px;
+    align-items: center;
+    margin-left: 10vw;
+
+}
+.Buscar {
+    display: flex;
+    align-items: center;
+    
+}
+.Buscar input {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 32vw;
+    border-radius: 30px;
+    margin-left: 10vw;
+    border: 4px solid white;
+}
+.Buscar img {
+    transform: translateX(-12vw);
+    width: 20px;
+    
+
+}
+.Login {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+
+}
+.Login img {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 10vw;
+}
+.carrinho {
+    display: flex;
+    align-items: center;
+}
+.carrinho img {
+    display: flex;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 5vw;
+
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    margin-left: 4vw;
+}
+
+ .categorias a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+ }
+
+
+.filtro a{
+    color: black;
+    text-decoration: none;
+    justify-content: center;
 }
 .categorias{
     display: flex;
     background-color: var(--cor-secundaria);
-    align-items: center;
-    justify-content: center;
-    gap: 20px; 
+   align-items: center;
+   gap: 30px; 
     height: 50px;
 
+}
+.promo {
+    display: flex;
+    margin-left: 12vw;
+    gap: 40px; 
+    color: white;
+    text-decoration: none;
+    
+}
+.comp {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    
+}
+.comp img {
+    height: 25px;
+    width: 25px;
+    margin-left: 4vw;
+
+}
+.local {
+    display: flex;
+    margin-left: 10px;
+    color : white;
+    gap: 5px;
+  
+}
+.local img {
+    filter: invert(100%);
+    height: 25px;
+    width: 25px;
+    margin-left: 4vw;
+}
+.categorias:hover p {
+    transform: scale3d(1.1, 1.1, 1);
 }
 
 
@@ -48,48 +265,32 @@ nav {
     background-color: var(--cor-principal);
     display: flex;
 }
-.Logo img {
-    width: 70px;
-    margin-inline: 20px;
-    
-}
 
-.Buscar {
-    display: flex;
-    align-items: center;
-
-}
-.Buscar  input {
-    padding: 10px;
-    width: 500px;
-    
-}
-
-.Buscar img {
-    transform: translateX(-30px);
-    width: 20px;
-}
-.menu img{
-
-    filter: invert(100%);
-
-}
 .filtro {
-    background-color: #353535;
-    border: 4px solid black;
-      width: 10vw;
-      height: min-content;
-      margin-top: 80px;
-      margin-left: 15px;
-      padding: 25px;
-      border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 4px solid white;
+    
+    width: 10vw;
+    height: min-content;
+    margin-top: 80px;
+    margin-left: 15px;
+    padding: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
 
 }
 .filtro p {
-    color: white;
+    color: black;
     font-size: 24px;
     margin-inline: 6px;
-    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    
+   
 }
 p {
     color: white;
@@ -97,19 +298,15 @@ p {
     margin-inline: 6px;
     
 }
-.Login {
-    display: flex;
-    color: var(--font-color);
-    align-items: center;
-    margin-left: 40vw;
-}
-.Login img {
-    filter: invert(100%);
-    height: 30px;
-    width: 30px;
-    margin-left: 4vw;
-    
 
+.log:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.carrinho:hover img{
+    transform: scale3d(1.1, 1.1, 1);
+}
+.menu:hover img {
+    transform: scale3d(1.1, 1.1, 1);
 }
 .product-grid {
     display: grid;
@@ -123,9 +320,10 @@ p {
 .item-card {
     width: 250px;
     text-align: center;
-    border: 4px solid black;
+    border: 2px solid white;
     cursor: pointer;
     border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 
 }
 .item-card p { 
@@ -149,6 +347,7 @@ p {
 .item-card:active {
     transform: scale3d(0.9, 0.9, 1);
 }
+
 body{
     height: 100vh;
     overflow: hidden;
@@ -200,7 +399,7 @@ body{
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #0e2941;
+  background: var(--cor-secundaria);
 }
 .form .message {
   margin: 15px 0 0;
@@ -208,18 +407,21 @@ body{
   font-size: 12px;
 }
 .form .message a {
-  color: #234666;
+  color: var(--cor-secundaria);
   text-decoration: none;
 }
 .form .register-form {
   display: none;
 }
 .login-page img {
-    display: flex;
-    margin-right: 40px;
+     margin-right: 40px;
     margin-left: 40px;
-    width: 60px;
-
-
+     width: 60px;
+     
+}
+.cad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15Spx;
 }
 
