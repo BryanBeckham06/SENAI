@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
+@import url(https://use.fontawesome.io/releases/v6.4.2/css/all.css);
 *{
     padding: 0;
     margin: 0;
@@ -312,7 +313,7 @@ p {
     display: grid;
     grid-template-columns: 250px 250px 250px ;
     justify-content:flex-start;
-    
+   
     margin: 100px 11rem 0px 15rem;
     gap: 1.70rem 1.70rem;
     color: black;
@@ -325,6 +326,9 @@ p {
     border-radius: 8px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 
+}
+.item-card a {
+    text-decoration: none;
 }
 .item-card p { 
     color: black;
@@ -427,4 +431,23 @@ body{
 .login-page:hover {
     transform: scale3d(1.1, 1.1, 1);
 }
+.redes a {
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+    -webkit-box-reflect: below 5px linear-gradient(to
+    bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
 
