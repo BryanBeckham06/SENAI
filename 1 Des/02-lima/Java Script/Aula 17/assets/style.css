@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+*
+
+
+:root {
+    
+    --font-fam-secundary: 'Roboto', sans-serif;
+    
+
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+.cabecario {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+ .cabecario p {
+  font-size: larger;
+ }
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+
+  input {
+    width: 24vh;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+   
+    
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: black;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    gap: 30px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .card{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 13%;
+    height: 40%; 
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .info {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .name {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }

@@ -1,43 +1,63 @@
-class Triangulo{
-    constructor(lado1, lado2, lado3){
-        this.lado1 = lado1
-        this.lado2= lado2
-        this.lado3 = lado3
-        this.tipo
-    }   
+class Paciente{
+    constructor(nome, peso, altura){
+        this.nome = nome
+        this.peso = peso
+        this.altura = altura
+        this.imc
+    }
 
-    tipo(){
-        if(this.lado1 == this.lado2 && this.lado1 == this.lado3){
-            return this.tipo = "EQUILATERO"
-        }
-        else if (this.lado2 == this.lado2 && this.lado1 == this.lado3) {
-            return "Isosceles";
-        }   else {
-            return "Escaleno";
+    imc(){
+        return this.imc =  this.peso / (this.altura * this.altura)
+    }
+
+    diagnosticar(){
+        if(this.imc < 18.5){
+            return "Abaixo do peso"
+        }else if(this.imc > 18.5 && this.imc < 24.9){
+            return "Peso normal"
+        }else if(this.imc > 25 && this.imc < 29.9){
+            return "Sobrepeso"
+        }else if(this.imc > 30 && this.imc < 34.9){
+            return "Obesidade grau 1"
+        }else if(this.imc > 35 && this.imc < 39.9){
+            return "Obesidade grau 2"
+        }else{
+            return "Obesidade grau 3"
         }
     }
-    
-        showHTML(){
-            let str = `<label>Lado1 :</label><label>${this.lado1}</label>`
-            str += `<label>Lado2 : </label><label>${this.lado2}</label>`
-            str += `<label>Lado3 : </label><label>${this.lado3}</label>`
-            str += `<label>Tipo : </label><label>${this.tipo()}</label>`
-            return str
-        }
+
+    showHTML(){
+        let str = `<h2>${this.nome}</h2>`
+        str += `<hr>`
+        str += `<div class="espaco">`
+        str += `<p>Peso:</p><p>${this.peso}</p>`
+        str += `</div>`
+        str += `<div class="espaco">`
+        str += `<p>Altura:</p><p>${this.altura}</p>`
+        str += `</div>`
+        str += `<div class="espaco">`
+        str += `<p>IMC:</p><p>${this.imc().toFixed(1)}</p>`
+        str += `</div>`
+        str += `<hr>`
+        str += `<h3>Diagnóstico</h3>`
+        str += `<h3>${this.diagnosticar()}</h3>`
+        return str
+    }
 }
 
-const listaTriangulos = []
-listaTriangulos.push(new Triangulo(10,  20 , 30))
-listaTriangulos.push(new Triangulo(10,  10 , 30))
-listaTriangulos.push(new Triangulo(10 , 20 , 10))
-listaTriangulos.push(new Triangulo(30 , 10 , 10))
-listaTriangulos.push(new Triangulo(20 , 20 , 10))
+const pacientes = []
+pacientes.push(new Paciente('André Mattos', 80, 1.8))
+pacientes.push(new Paciente('João da silva', 100, 1.7))
+pacientes.push(new Paciente('Maria de Souza', 60, 1.8))
+pacientes.push(new Paciente('José de Oliveira', 90, 1.75))
+pacientes.push(new Paciente('Silva Andrade', 60, 1.85))
+pacientes.push(new Paciente('Sueli Oliveira', 44, 1.65))
+pacientes.push(new Paciente('Pedro de Souza', 110, 1.85))
 
-console.log(listaTriangulos)
-
-const main = document.getElementById("triangulos")
-listaTriangulos.forEach(triangulo => {
-        const div = document.createElement("div")
-        div.innerHTML = triangulo.showHTML()
-        main.appendChild(div)
+const main = document.getElementById("pacientes")
+pacientes.forEach(pce => {
+    const div = document.createElement('div')
+    div.classList.add("card")
+    div.innerHTML = pce.showHTML()
+    main.appendChild(div)
 })

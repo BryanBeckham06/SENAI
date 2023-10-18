@@ -1,52 +1,54 @@
 * {
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #373636;
+    background-color: #15AAFF;
 }
-.texto {
+
+header {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
-.texto h1 {
-    color: #15AAFF;
-}
-.product-grid {
-    display: grid;
-    grid-template-columns: 250px 250px 250px ;
-    justify-content:center;
-   
-    margin: 100px 11rem 0px 15rem;
-    gap: 1.70rem 1.70rem;
-    color: black;
-} 
-.item-card {
-    width: 250px;
-    text-align: center;
-    border: 2px solid white;
-    cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 0 0 20px 0 black, 1, 1, 0.2), 0 5px 5px 1 black(1, 1, 0, 0.24);
 
-}
-.item-card div {
-    
-    margin-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #000;
-    margin-inline: 20px;
-    
-}
 main {
-    display: grid;
     justify-content: center;
-    margin-top: 40px;
-    gap: 10px;
-
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 200px 200px 200px 200px;
+    margin-top: 30px;
+    
 }
 
+.card {
+    padding: 20px;
+    background-color: #15AAFFs;
+    box-shadow: 1px 1px 10px 2px black;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    margin-block: 5px;
+}
+
+.espaco {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}

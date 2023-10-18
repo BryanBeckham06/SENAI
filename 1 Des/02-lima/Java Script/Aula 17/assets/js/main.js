@@ -15,7 +15,7 @@ class Descontos {
         return (this.salario * 9) / 100;
       } else if (this.salario < 3856.95) {
         return (this.salario * 12) / 100;
-      } else if (this.salario < 75070.49) {
+      } else if (this.salario < 7507.49) {
         return (this.salario * 14) / 100;
       } else {
         return 1051.05;
@@ -37,13 +37,14 @@ class Descontos {
     }
   
     showHTML() {
-      let str = `<h2 id="nome">${this.nome}</h2>`;
+      let str = `<div class="name"><h2 id="nome">${this.nome}</h2></div>`;
       str += `<hr>`;
-      str += `<p id="sal">Salário:</p><p>${this.salario}</p>`;
-      str += `<p id="inss">INSS:</p><p>${this.inss}</p>`;
-      str += `<p id="salB">Salário Base:</p><p>${this.salBase}</p>`;
-      str += `<p id="irrf">IRRF:</p><p>${this.irrf}</p>`;
-      str += `<p id="salL">Salário Líquido:</p><p>${this.salLiquido}</p>`;
+      
+      str += `<div class="info"><p id="sal">Salário:</p><p>R$${this.salario}</p></div>`;
+      str += `<div class="info"><p id="inss">INSS:</p><p>R$${this.inss}</p></div>`;
+      str += `<div class="info"><p id="salB">Salário Base:</p><p>R$${this.salBase}</p></div>`;
+      str += `<div class="info"><p id="irrf">IRRF:</p><p>R$${this.irrf}</p></div>`;
+      str += `<div class="info"><p id="salL">Salário Líquido:</p><p>R$${this.salLiquido}</p></div>`;
       return str;
     }
   }
