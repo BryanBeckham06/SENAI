@@ -16,15 +16,15 @@ function criarCard(){
     pessoas.forEach(pessoa => {
         let cardNew = card.cloneNode(true);
         cardNew.classList.remove('model');
-        cardNew.querySelector("#nomeValor").innerHTML = pessoa.nome;
-        cardNew.querySelector("#salarioValor").innerHTML = pessoa.salario;
-        cardNew.querySelector("#salarioBase").innerHTML = pessoa.salarioBase;
-        cardNew.querySelector("#salarioLiquido").innerHTML = pessoa.salarioLiquido;
-        cards.appendChild(cardNew);
+        // cardNew.querySelector("#nomeValor").innerHTL = pessoa.nome;
+        // cardNew.querySelector("#salarioValor").innerHTML = `<p>Salário</p><p>R$ ${pessoa.salario}</p>`;
+        // cardNew.querySelector("#salarioBase").innerHTML = `<p>Salário Base</p><p>R$ ${pessoa.salarioBase}</p>`;
+        // cardNew.querySelector("#salarioLiquido").innerHTML = `<p>Salário Liquido</p><p>R$ ${pessoa.salarioLiquido}</p>`;
+        // cards.appendChild(cardNew);
     })
 }
     function remover (e) {
-        e.parentNode.remove()
-        pessoa.splice(e,1)
+        e.parentNode.parentNode.remove()
+        pessoas.splice(e,1)
     }
  

@@ -1,14 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
 body{
-    background: #eee;
+    background: white;
 }
 
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+.titulo h1 {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+ h1 {
+    font-family: "Poppins", sans-serif;
+}
 .card{
     width: 250px;
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 20px;
     border: 1px solid black;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0,0,0, .5);
+   
+}
+.infos h4{
+     display: flex;
+    justify-content: space-between; 
+
+    
 }
 
 .card h1{
@@ -18,3 +42,62 @@ body{
 .model{
     display: none;
 }
+#formPessoa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+
+  input {
+    width: 28vh;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+  }
+  input[type="submit"]{
+
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    background: black;
+    width: 24vh;
+    height: 48px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  input[type="submit"]:hover,.input[type="submit"]:active,input[type="submit"]:focus {
+    background: gray;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: black;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+  }
+  .botão {
+    display: flex;
+    justify-content: center;
+    
+  }
+  button:hover,button:active,button:focus {
+    background: red;
+  }
