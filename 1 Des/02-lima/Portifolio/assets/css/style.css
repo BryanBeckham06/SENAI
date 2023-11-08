@@ -13,7 +13,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
- nav {
+
+nav {
     background-color:#020B2E;
     width: 100vw;
     height: 80px;
@@ -22,49 +23,47 @@ background-size: cover;
     gap: 45px;
     position: relative;
     z-index: 1;
- }
+}
+
  .logo {
     display: flex;
     align-items: center;
     margin-left: 50px;
 }
+
 .social-midias {
    display: flex;
     align-items: center;
     gap: 30px;
     
 }
+
  .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    
-
  }
  .info {
    display: flex;
    width: 100%;
    align-items: center;
-   gap:30px;
-   
+   gap:30px;   
  }
  .info p {
    color: white;
    font-family: "Poppins";
    font-size: 20px;
  }
- 
  .infos {
    display: flex;
    gap: 40px;
    align-items: center;
    justify-content: space-between;
    margin-right: 100px;
-  
-   
  }
+
  .interface {
    display: flex;
    justify-content: center;
@@ -102,8 +101,6 @@ background-size: cover;
    text-align: left;
    font-family: "Poppins";
  }
-
-
  .instagram:hover  {
    transform: scale3d(1.1, 1.1, 1);
 }
@@ -121,4 +118,38 @@ background-size: cover;
 }
 .tres:hover:hover p {
    transform: scale3d(1.1, 1.1, 1);
+}
+.main-rotation {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 31.5%;
+  height: 50px;  
+}
+.rotation {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+.rotation h4 {
+    display: block;
+    height: 100%;
+    padding-right: 10px;
+    text-align: right;
+    animation: spin_words 10s infinite;
+}
+
+@keyframes spin_words {
+  25% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  75% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(300%);
+  }
 }
